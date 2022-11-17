@@ -1,0 +1,29 @@
+{
+  "name": "datool",
+  "version": "1.0.0",
+  "description": "Developer API Tool",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lanceseidman/datool.git"
+  },
+  "keywords": [
+    "api",
+    "dev",
+    "tools"
+  ],
+  "author": "Lance Seidman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lanceseidman/datool/issues"
+  },
+  "homepage": "https://github.com/lanceseidman/datool#readme",
+  "dependencies": {
+    "@picocss/pico": "^1.5.6",
+    "axios": "^1.1.3"
+  }
+}
