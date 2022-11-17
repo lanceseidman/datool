@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="Access-Control-Allow-Origin" content="*">
+        <meta http-equiv="Feature-Policy" content="fullscreen "*"; usb "self"; payment "self" http:///file>
+        <title>DAT</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../node_modules/@picocss/pico/css/pico.min.css">
+        
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="nav">
+            
+        </div>
+        <div class="grid">
+            <label for="api_endpoint">
+                API Endpoint 
+                <input type="text" id="api_endpoint" name="api_endpoint" placeholder="e.g. https://0.0.0.0:5001/addUser" required>
+            </label>
+            <h4>Body Section</h4>
+            <button class="btn btn-success" onClick="addKeyValue()">Add Key Value Pair</button>
+            <label for="body_encode">Encode</label>
+            <select id="body_encode" required>
+                <option value="err" selected default>Select Body Encode…</option>
+                <option value="form-data">form-data</option>
+                <option value="x-www-form-urlencoded">x-www-form-urlencoded</option>
+                <option value="raw">raw</option>
+            </select>
+            <div id="data-values">
+                <!-- API Call Key Value Pair's Here -->
+            </div>      
+        </div>
+        <a role="button" onclick="makeRequest()" class="contrast" style="width:100%;">Send Request</a>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
